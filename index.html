@@ -4,12 +4,179 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Ryosuke's Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        ul li a.bar:hover {
+            background-color: #666;
+        }
+    
+        .page-header {
+            margin-top: 10px;
+            text-align: center;
+        }
+    
+        #logo img {
+            max-width: 200px;
+            border-radius: 100%;
+        }
+        
+        .content {
+            margin-bottom: 30px;
+        }
+        
+        .profile {
+            font-weight: bold;
+        }
+        
+        .okinawa {
+            color: #999;
+        }
+        
+        .social-btn {
+            margin-bottom: 40px;
+        }
+        
+        .page-footer {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .portfolio img {
+            max-width: 200px;
+        }
+        
+        footer {
+            border-top: 1px solid #e7e7e7;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding-top: 5px;
+        }
+        
+    </style>
+    
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Ryosuke's Portfolio</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="sitemenu">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="bar" href="#">About</a></li>
+                <li><a class="bar" href="">Portfolio</a></li>
+                <li><a class="bar" href="https://github.com/ryosukek/ryosukek.github.io">GitHub</a></li>
+                <li><a class="bar" href="https://twitter.com/kawauchi_co">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="page-header">
+            <h1>About me</h1>
+        </div>
+        
+        <div class="row">
+            <div id="logo" class="col-sm-3">
+                <img src="profile.jpg" alt="" />
+            </div>
+            
+            <div class="content col-sm-9">
+                <h2>河内 亮祐 <small>Ryosuke Kawauchi</small></h2><br>
+                <h4><span class="profile">Profile</span></h4>
+                <p>
+                    1983年　愛知県生まれ。<br>
+                    「日本最南端の国立大学」琉球大学（建築科）を卒業後、丸の内の某大手総合人材会社に入社。<br>
+                    1年目に新規事業立上げに参画。法人営業、企画、地方拠点立上げ等を経験。<br>
+                    その後スイーツ系ECサイト運営会社に転職。ディレクターとして商品企画、商品開発、マーケティング、メルマガ戦略、商品撮影、コンテンツ作成等幅広く担当。担当したモールでは同社初のベストストア受賞に貢献。<br>
+                    現在は愛知に戻り家業の設計事務所でクライアント折衝をしつつ、プログラミングを勉強し新規サービスを立上げたいと考えている。
+                </p><br>
+                <h4><span class="profile">ざっくり言うと…</span></h4>
+                <ul>
+                    <li>
+                        初対面の人に「あ〜沖縄っぽい顔ですね」とだいたい言われる。<br>
+                        <span class="okinawa">（そして毎回「沖縄に住むと顔も沖縄っぽくなるんですよ〜」と返す。）</span>
+                    </li>
+                    <li>
+                        twitterでなぜかChikirin女史にフォローされる数少ない一般人の一人…。<br>
+                    </li>
+                    <li>
+                        趣味は1歳になる娘との週末デート。
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="social-btn col-sm-offset-3 col-sm-9">
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                        <a href="https://github.com/ryosukek/ryosukek.github.io" class="btn btn-default btn-github" style="color: white; background-color: #333333;">
+                            GitHub
+                        </a>
+                        <a href="https://twitter.com/kawauchi_co" class="btn btn-default btn-twitter" style="color: white; background-color: #55acee">
+                            Twitter
+                        </a>
+                    </div>
+            </div>
+            
+            <div id="portfolio" class="page-footer">
+                <h1>Portfolio</h1>
+            </div>
+            
+            <div class="portfolio">
+                <div class="portfolio-1 col-sm-3">
+                    <a href="#">
+                        <img src="sample-image.jpg" alt="" />
+                    </a>
+                    <p>
+                        <a href="#">Sample1</a>
+                    </p>
+                </div>
+                <div class="portfolio-2 col-sm-3">
+                    <a href="#">
+                        <img src="sample-image.jpg" alt="" />
+                    </a>
+                    <p>
+                        <a href="#">Sample2</a>
+                    </p>
+                </div>
+                <div class="portfolio-3 col-sm-3">
+                    <a href="#">
+                        <img src="sample-image.jpg" alt="" />
+                    </a>
+                    <p>
+                        <a href="#">Sample3</a>
+                    </p>
+                </div>
+                <div class="portfolio-4 col-sm-3">
+                    <a href="#">
+                        <img src="sample-image.jpg" alt="" />
+                    </a>
+                    <p>
+                        <a href="#">Sample4</a>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <footer>
+            <div class="copyright">&copy; 2015 Ryosuke Kawauchi</div>
+        </footer>
 
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
